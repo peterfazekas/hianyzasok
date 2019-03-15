@@ -1,7 +1,6 @@
 package hu.absence.controller;
 
 import java.util.List;
-import java.util.LongSummaryStatistics;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
