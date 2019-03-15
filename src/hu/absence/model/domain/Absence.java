@@ -30,5 +30,9 @@ public class Absence {
 		return absences.charAt(lessonCount - 1) == 'X' || absences.charAt(lessonCount - 1) == 'I';
 	}
 	
+	public long countAbsence() {
+		return count('I') + count('X');
+	}
+	
 	
 }

@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 import hu.absence.model.domain.Absence;
@@ -12,7 +13,19 @@ import hu.absence.model.domain.RegisterDate;
 
 public class DataReader {
 
+	private final Scanner scanner = new Scanner(System.in);
 	private RegisterDate registerDate;
+	
+	
+	public int readInt(String text) {
+		System.out.print(text);
+		return scanner.nextInt();
+	}
+	
+	public String readText(String text) {
+		System.out.print(text);
+		return scanner.next();
+	}
 	
 	public List<Absence> getData(String fileName) {
 		return parse(read(fileName));
